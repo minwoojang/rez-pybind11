@@ -34,5 +34,7 @@ with scope("config") as config:
 uuid = "pybind11-{version}".format(version=str(version))
 
 def commands():
+    env.CMAKE_MODULE_PATH.prepend("{root}/share/cmake/pybind11")
+
     # Helper environment variables.
     env.PYBIND11_INCLUDE_PATH.set("{root}/include")
