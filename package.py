@@ -13,14 +13,12 @@ description = \
     """
 
 requires = [
-    "cmake-3+",
-    "gcc-6+",
-    "python-2.7+<3"
+    "cmake",
+    "gcc",
+    "python-3.7.7"
 ]
 
-variants = [
-    ["platform-linux"]
-]
+variants = [['platform-linux', 'arch-x86_64']]
 
 tools = [
     ""
